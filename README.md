@@ -1,5 +1,13 @@
 # arana-ix-client-example
 
+## Running the code
+
+0. Register the xApp on Ix Interface to get Ix credentials, visit {IX_INTERFACE_IP}:31234/internal
+1. Clone the github repo on your machine
+2. Install the dependencies using `pip install -r requirements.txt`
+3. Add the Ix credentials in main.py, replacing the username, password and relation_id values.
+4. Run main.py `python main.py`
+
 ## IxClient
 
 This class implements an Ix client that enables xApp communication to their respective Ix server. It uses socket.io websockets and long-polling requests to achieve minimal transmit latency.
