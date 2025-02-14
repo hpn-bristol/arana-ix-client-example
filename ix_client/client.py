@@ -70,7 +70,7 @@ class IxClient(object):
         if relation_id:
             auth["relation_id"] = relation_id
             self._emit_path = "xapp_relation_emit"
-        self._client.connect(url=self._url, socketio_path="/internal/ws",  auth=auth)
+        self._client.connect(url=self._url, socketio_path="/internal/ws", auth=auth)
 
     @socketio_wrapper
     def disconnect(self):
